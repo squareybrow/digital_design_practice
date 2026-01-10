@@ -4,9 +4,9 @@ module ram #(
 ) (
     input logic clk,
     input logic write_en,
-    input logic [N-1:0] adr,
-    input logic [M-1:0] din,
-    output logic [M-1:0] dout
+    input logic [ADDR_WIDTH-1:0] adr,
+    input logic [DATA_WIDTH-1:0] din,
+    output logic [DATA_WIDTH-1:0] dout
 );
 
   logic [DATA_WIDTH-1:0] mem[2**ADDR_WIDTH];
