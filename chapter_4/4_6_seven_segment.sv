@@ -36,7 +36,7 @@ module hex_to_seven_seg_testbench;
 
   initial begin
     $monitor($time, "num = %h, seven_seg = %b", num, seven_seg);
-    #5 num = 4'h0;
+    num = 4'h0;
     #5 num = 4'h1;
     #5 num = 4'h2;
     #5 num = 4'h3;
